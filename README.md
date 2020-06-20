@@ -16,6 +16,7 @@ PostgreSQL has a feature called inheritance. This feature is the base for table 
 
 ## Putting them together
 
+```
   +-------------+
   |warm.waypoint| // When you select from here, you select data from both tables
   +-------------+
@@ -24,6 +25,7 @@ PostgreSQL has a feature called inheritance. This feature is the base for table 
  +---------------+
  |public.waypoint| // When you select from here, you get data only from this table
  +---------------+
+```
 
 There is 2 database connections, one with the default `public` schema in the `search_path`, and the other with `warm,public` in the `search_path`
 
